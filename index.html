@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>,
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+   
+</head>
+<body>
+    <form  id="create-account-form" action="result.html" method="GET">
+        
+        <div class="title">
+            <h2>Create Account</h2>
+        </div>
+        <!-- USERNAME -->
+        <div class="input-group">
+            <label for="username">Name</label>
+            <input class="myinput" onblur="myFunctionblur()"  type="text" id="username" placeholder="Name" name="username">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- EMAIL -->
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input class="myinput" type="text" id="email" placeholder="Email" name="email">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <!-- PASSWORD -->
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input class="myinput" type="password" id="password" placeholder="Password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+           
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <label for="checkbx">Show Password</label>
+        <input type="checkbox" id="checkbx" onclick="myFunction()">
+        <!-- CONFIRM PASSWORD -->
+        <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input class="myinput" type="password" id="confirm-password" placeholder="Password" name="confirmpassword">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Error Message</p>
+        </div>
+        <div class="input-group">
+            <label for="myFile">Click on the button to upload file</label>
+        <input type="file" id="myFile" name="filename">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+            </form>
+
+
+    <!-- JAVASCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+    
+
